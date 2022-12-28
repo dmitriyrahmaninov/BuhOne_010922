@@ -1,0 +1,55 @@
+@media (min-width: 768px)
+    .wrapper
+        display: flex
+        justify-content: space-between
+        align-items: center
+        height: 100px
+        position: relative
+    .header_menu>button
+        border: transparent
+        background-color: transparent
+    .open_header_menu
+        font-size: 60px
+        cursor: pointer
+    .nav_menu
+        display: none
+    .active
+        display: block
+        cursor: pointer
+        list-style: none
+        top: 100%
+        width: 300px
+        right: 0px
+        position: absolute
+        background-color: white
+        transform: translateX(0)
+        transition: transform 0.5s ease
+        font-size: 30px
+        text-transform: uppercase
+        background-color: #EBEBEB
+        &>li
+            padding: 15px
+            border-bottom: 1px solid black
+            font-weight: 700
+
+@media (min-width: 1200px)
+    .open_header_menu
+        display: none
+    .wrapper
+        display: flex
+        justify-content: center
+        align-items: center
+    .logo
+        display: block
+        margin-left: 0
+        margin-right: auto
+    .header_menu
+        display: flex
+        justify-content: center
+        align-items: center
+        gap: 80px
+    .nav_menu
+        display: flex
+        list-style: none
+        text-transform: uppercase
+        gap: 20px
